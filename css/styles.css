@@ -381,10 +381,10 @@ span.intro_line2 {
 
 
 /*************************************************
-                     #partiupraia
+                     .projeto
 **************************************************/
 
-#partiupraia {
+.projeto {
 	background: #fff;
 	width: 100%;
 	margin: 0 auto;
@@ -396,8 +396,7 @@ span.intro_line2 {
 	padding-bottom: 50px;
 }
 
-
-#partiupraia .subtitle {
+.projeto .subtitle {
 	border: 1px solid #efefef;
 }
 
