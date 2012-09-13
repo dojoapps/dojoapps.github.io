@@ -782,3 +782,9 @@ span.address {
 	height: 220px;
 	width: 220px;
 }
+
+/*************** copyright ***************/
+
+.cabeca {
+	border-radius: 50%;
+}
