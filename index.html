@@ -17,11 +17,9 @@
 	<link href="css/reset.css" rel="stylesheet" type="text/css" />
 	<link href="css/960.css" rel="stylesheet" type="text/css" />
 	<link href="css/styles.css" rel="stylesheet" type="text/css" />
-	<link href="fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" />
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 	<script src="js/smooth-scroll.js" type="text/javascript"></script>
-	<script src="fancybox/jquery.fancybox-1.3.4.pack.js" type="text/javascript"></script>
 	<script src="js/nbw-parallax.js" type="text/javascript"></script>
 	<script src="js/jquery.inview.js" type="text/javascript"></script>
 	<script src="js/jquery.sticky.js" type="text/javascript"></script>
@@ -34,32 +32,6 @@
 		$(window).load(function(){
 			$("nav").sticky({ topSpacing: 0, className: 'sticky', center: true });
 		});
-	</script>
-
-	<script type="text/javascript"> // fancybox
-	$(document).ready(function() {
-
-	/* This is basic - uses default settings */
-
-	$("a.single_image").fancybox();
-
-	/* Using custom settings */
-
-	$("a#inline").fancybox({
-		'hideOnContentClick': true
-	});
-
-	/* Apply fancybox to multiple items */
-
-	$("a.group").fancybox({
-		'transitionIn'	:	'elastic',
-		'transitionOut'	:	'elastic',
-		'speedIn'		:	600,
-		'speedOut'		:	200,
-		'overlayShow'	:	false
-	});
-
-	});
 	</script>
 
 </head>
@@ -201,15 +173,13 @@
 		<div>
 			<div class="grid_6">
 				<div>
-					<div id="featured"> 
-						<div class="subtitle">
-							<p>
-								Crush Me é um aplicativo que promete dar aquele empurrãozinho na hora de saber se a pessoa que você gosta também tem um interesse em você.<br/><br/>
-								É simples, rápido e mantém o seu anonimato!<br/><br/>
-								Ficou moleza descobrir se alguém gosta de você também e poder partir para um encontro mais formal!<br/><br/>
-								Confira também no facebook <a href="https://apps.facebook.com/crushmeapp" title="Crush Me App">clicando aqui.</a>
-							</p>
-						</div>
+					<div class="subtitle">
+						<p>
+							Crush Me é um aplicativo que promete dar aquele empurrãozinho na hora de saber se a pessoa que você gosta também tem um interesse em você.<br/><br/>
+							É simples, rápido e mantém o seu anonimato!<br/><br/>
+							Ficou moleza descobrir se alguém gosta de você também e poder partir para um encontro mais formal!<br/><br/>
+							Confira também no facebook <a href="https://apps.facebook.com/crushmeapp" title="Crush Me App">clicando aqui.</a>
+						</p>
 					</div>
 				</div>
 			</div>
