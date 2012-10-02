@@ -24,7 +24,6 @@
 	<script src="js/nbw-parallax.js" type="text/javascript"></script>
 	<script src="js/jquery.inview.js" type="text/javascript"></script>
 	<script src="js/jquery.sticky.js" type="text/javascript"></script>
-	<script src="contactform.js" type="text/javascript"></script>
 	<script src="js/foundation.js" type="text/javascript"></script>
     <script src="js/modernizr.foundation.js" type="text/javascript"></script>
 
@@ -253,18 +252,21 @@
 					<b>Obrigado !</b> Recebemos a sua mensagem.
 				</div>
 
-				<form method="post" action="process.php">
+				<form method="post" action="http://dojomailer.apphb.com/api/mail/send">
+					<input type="hidden" name="HostId" value="1"/>
+					<input type="hidden" name="Destination" value="contato@dojoapps.com.br"/>
+					<input type="hidden" name="RedirectUri" value="http://www.dojoapps.com.br/"/>
 					<div class="grid_7 alpha">
 						<p><span class="bullet2"></span> nome</p>
-						<input type="text" name="name" class="text" />
+						<input type="text" name="from" class="text" />
 
 						<p><span class="bullet2"></span> email</p>
-						<input type="text" name="email" class="text" id="email" />
+						<input type="text" name="subject" class="text" id="email" />
 					</div> <!-- end .grid_7 -->
 
 					<div class="grid_9 omega">
 						<p><span class="bullet3"></span> mensagem</p>
-						<textarea name="comment" class="text textarea"></textarea>
+						<textarea name="body" class="text textarea"></textarea>
 
 						<input type="submit" id="submit" value="enviar" class="submit-button" />
 					</div> <!-- end .grid_9 -->
